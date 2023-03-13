@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.99a8b191.css",
+    "main.js": "/portfolio/static/js/main.99147c75.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/coolaLike.png": "/portfolio/static/media/coolaLike.2c3fcd17b1602e061ef6.png",
+    "static/media/carShop.png": "/portfolio/static/media/carShop.091c2e59f89bc66a490c.png",
+    "static/media/minesweeper.png": "/portfolio/static/media/minesweeper.f87233e62b9ada544653.png",
+    "static/media/todoApp.png": "/portfolio/static/media/todoApp.0270a0e0f59490871a11.png",
+    "static/media/memeGen.jpg": "/portfolio/static/media/memeGen.a4fb29ddf5b2feeac050.jpg",
+    "static/media/ballBoard.jpg": "/portfolio/static/media/ballBoard.f82f49e141103922ec55.jpg",
+    "static/media/bookShop.jpg": "/portfolio/static/media/bookShop.769455726354d36cee57.jpg",
+    "static/media/eletricityCalc.png": "/portfolio/static/media/eletricityCalc.cc71261ab8a78327092e.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.9ef49efee03fc47595b0.jpg",
+    "static/media/node.js.svg": "/portfolio/static/media/node.js.52cbf9a89f44655c0375b9e9f88bf9c5.svg",
+    "static/media/express.svg": "/portfolio/static/media/express.75fff9be2f3b289ba7be1f43a08f7a4c.svg",
+    "static/media/sass.svg": "/portfolio/static/media/sass.8aa78a8393470431c8036541f0708bd7.svg",
+    "static/media/logo.svg": "/portfolio/static/media/logo.a0cbb7c736be781d8f8f6933d3bb81fa.svg",
+    "static/media/redux.svg": "/portfolio/static/media/redux.0e4fb1c819ac4c060c92343147d4ccf7.svg",
+    "static/media/mongodb.svg": "/portfolio/static/media/mongodb.1aca075d5cce0819fea7ea0902d94ce4.svg",
+    "static/media/javascript.svg": "/portfolio/static/media/javascript.00f3e5cf8bcf4ae623b3835ca5791b15.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/css.svg": "/portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
+    "main.99a8b191.css.map": "/portfolio/static/css/main.99a8b191.css.map",
+    "main.99147c75.js.map": "/portfolio/static/js/main.99147c75.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99a8b191.css",
+    "static/js/main.99147c75.js"
+  ]
+}
