@@ -3,7 +3,7 @@ import { Routes, Route, HashRouter } from 'react-router-dom'
 import { routes } from './routes'
 import { Header } from './cmps/Header'
 import { Footer } from './cmps/Footer'
-import { Weather } from './cmps/Weather'
+// import { Weather } from './cmps/Weather'
 export const PortfolioApp = () => {
   const [position, setPosition] = useState(null)
   return (
