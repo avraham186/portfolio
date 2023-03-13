@@ -1,0 +1,12 @@
+//header
+$icon-size: 2em;
+$indicator-spacing: calc(#{$icon-size} / 8);
+$border-radius: calc(#{$icon-size} / 4);
+$nav-item-padding: calc(#{$icon-size} / 2);
+$background-color: #333;
+
+//responsiv
+$mobile-breakpoint:350px;
+$narrow-breakpoint:700px;
+$normal-breakpoint:1200px;
+$wide-breakpoint:1200px;

@@ -1,0 +1,153 @@
+.header {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    background-color: white;
+    border-radius: #{$border-radius};
+    margin-top: 2rem;
+
+    .logo {
+        .logo-img {
+            width: $icon-size;
+            height: $icon-size;
+        }
+    }
+
+    .list {
+        margin: 0px 12px 0px 0px;
+        padding: 0;
+        list-style: none;
+        position: relative;
+
+        a {
+            color: #333;
+            text-decoration: none;
+            gap: 5px;
+            padding: #{$nav-item-padding};
+
+            .text {
+                font-size: .8em;
+                opacity: 0;
+                pointer-events: none;
+                transition: 250ms ease-in-out;
+                position: absolute;
+                bottom: calc(1.2 * #{$nav-item-padding});
+                transform: translateY(50%);
+                // font-weight: 700;
+                font-weight: bold;
+            }
+
+            .icon {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                transition: 250ms ease-in-out;
+
+                svg {
+                    width: $icon-size;
+                    height: $icon-size;
+                }
+            }
+        }
+
+        .active {
+            .text {
+                pointer-events: all;
+                opacity: 1;
+            }
+
+            .icon {
+                transform: translateY(calc(-50% - #{$nav-item-padding})) scale(1.6);
+
+                svg {
+                    fill: whitesmoke;
+                    animation: draw .9s forwards;
+
+                    @keyframes draw {
+                        from {
+                            fill: black;
+                        }
+
+                        to {
+                            fill: whitesmoke;
+                        }
+                    }
+                }
+            }
+        }
+
+        .indicator {
+            position: absolute;
+            // left: calc(var(--position)*#{$nav-item-padding});
+            left: calc(var(--position) * (#{$icon-size} + #{$nav-item-padding} * 1.8));
+            transition: 250ms ease-in-out;
+
+            &:before {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background-color: #{$background-color};
+                width: calc((#{$icon-size} + #{$indicator-spacing}) * 2);
+                height: calc((#{$icon-size} + #{$indicator-spacing}) * 2);
+                top: calc(-1 * #{$icon-size} - #{$indicator-spacing});
+                left: calc(-1 * #{$indicator-spacing});
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background-color: #333333;
+                // background-color: hsl(100, 100%, 50%);
+                width: calc(#{$icon-size} * 2);
+                height: calc(#{$icon-size} * 2);
+                top: calc(-1 * #{$icon-size});
+            }
+
+            .corners {
+
+                &:before {
+                    content: "";
+                    box-sizing: content-box;
+                    position: absolute;
+                    width: #{$border-radius};
+                    height: #{$border-radius};
+                    background-color: white;
+                    z-index: 1;
+                    top: calc(-1 * #{$indicator-spacing});
+                    left: calc(.2 * #{$indicator-spacing});
+                    transform: translateX(-100%);
+                    border-top-right-radius: 100%;
+                    border-width: calc(#{$indicator-spacing});
+                    border-color: #{$background-color};
+                    border-style: solid;
+                    border-bottom: none;
+                    border-left: none;
+                }
+
+                &:after {
+                    content: "";
+                    box-sizing: content-box;
+                    position: absolute;
+                    width: #{$border-radius};
+                    height: #{$border-radius};
+                    background-color: white;
+                    z-index: 1;
+                    top: calc(-1 * #{$indicator-spacing});
+                    left: calc(#{$icon-size} * 2 + -.2 * #{$indicator-spacing});
+                    border-top-left-radius: 100%;
+                    border-width: calc(#{$indicator-spacing});
+                    border-color: #{$background-color};
+                    border-style: solid;
+                    border-bottom: none;
+                    border-right: none;
+                }
+            }
+        }
+    }
+}

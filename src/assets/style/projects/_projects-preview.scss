@@ -1,0 +1,42 @@
+.projects-preview {
+    background-color: rgb(29, 61, 129);
+    height: 16rem;
+    width: 10rem;
+    padding: 0px 10px;
+    border-radius: 10px;
+    transition: 250ms;
+
+    h2 {
+        margin: 5px 0px 5px 0px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    .project-img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .btn-enter-project {
+        background-color: rgb(60, 96, 175);
+        border-radius: 5px;
+        border-top: none;
+        transition: 250ms;
+
+        &:hover {
+            transform: scale(1.030);
+            transition: 250ms;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    &:hover{
+        transform: perspective(15cm) rotateX(-10deg) rotateY(20deg);
+    }
+
+}

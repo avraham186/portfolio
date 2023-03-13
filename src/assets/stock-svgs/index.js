@@ -1,0 +1,9 @@
+export { default as html } from './html.svg';
+export { default as jsl } from './javascript.svg';
+export { default as css } from './css.svg';
+export { default as scss } from './sass.svg';
+export { default as redux } from './redux.svg';
+export { default as node } from './node.js.svg';
+export { default as express } from './express.svg';
+export { default as mongo } from './mongodb.svg';
+export { default as react } from '../logo.svg';

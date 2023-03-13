@@ -1,0 +1,17 @@
+.dinamic-project-cmp{
+    position: fixed;
+    background-color: #fff;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    .close-dinamic{
+        width: 100%;
+        background-color: black;
+        cursor: pointer;
+    }
+    .iframe{
+        height: 100%;
+        width: 100%;
+    }
+}
