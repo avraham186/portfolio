@@ -48,19 +48,23 @@ export const Weather = () => {
   }
   const getWeather = async () => {
     const url = `${process.env.REACT_APP_CURRENTCONDITION}${weather.pos.lat},${weather.pos.long}`
-    const currentReq = await fetch(url,{'Access-Control-Allow-Origin':'*'})
-    const currentCond = await currentReq.json()
-    const cel = currentCond.current.temp_c.toString().slice(0, 2)
-    const fer = currentCond.current.temp_f.toString().slice(0, 2)
-    setWeather(() => {
-      return {
-        ...weather,
-        currC: cel,
-        currF: fer,
-        icon: currentCond.current.condition.icon,
-        iconText: currentCond.current.condition.text
-      }
-    })
+    try {
+      const currentReq = await fetch(url, { 'Access-Control-Allow-Origin': '*' })
+      const currentCond = await currentReq.json()
+      const cel = currentCond.current.temp_c.toString().slice(0, 2)
+      const fer = currentCond.current.temp_f.toString().slice(0, 2)
+      setWeather(() => {
+        return {
+          ...weather,
+          currC: cel,
+          currF: fer,
+          icon: currentCond.current.condition.icon,
+          iconText: currentCond.current.condition.text
+        }
+      })
+    } catch {
+      console.log('could not get weather');
+    }
   }
   const setFOrC = () => {
     setWeather((prev) => {
