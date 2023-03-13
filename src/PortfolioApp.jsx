@@ -11,7 +11,7 @@ export const PortfolioApp = () => {
       <HashRouter>
         <StrictMode>
           <Header position={position} setPosition={setPosition} />
-          <Weather />
+          {/* <Weather /> */}
           <Routes>
             {routes.map(route => <Route key={route.path} path={route.path} element={<route.element position={position} setPosition={setPosition} />} />)}
           </Routes>

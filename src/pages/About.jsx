@@ -13,7 +13,7 @@ export const About = ({ setPosition }) => {
                     React & Redux for the front
                     node for the back
                     mongo for the data base
-                    rest API or GraphQL
+                    rest API
                 </p>
             </article>
         </div>
