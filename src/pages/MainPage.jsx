@@ -26,7 +26,7 @@ export const MainPage = ({ setPosition }) => {
                     <div className='stack-logos flex column align-center'>
                         <div className='flex column align-center justify-center'>
                             <h1>My stack:</h1>
-                            <div className="stock flex wrap">
+                            <div className="stock flex justify-center wrap">
                                 {stockLogos.map(stackItem => <StackPreview key={stackItem.name} stockItem={stackItem} />)}
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 .main-page {
 
     .stack-and-img {
-        gap: rem(30px);
+        gap: rem(90px);
 
         .hero-and-info {
             width: 30%;
@@ -41,8 +41,8 @@
     }
 
 
-    @include for-mobile-layout {
-        margin: 30px 0px 30px 0px;
+    @include for-narrow-layout {
+        // margin: 30px 0px 30px 0px;
 
         .stack-and-img {
             flex-direction: column;
@@ -51,14 +51,42 @@
             .hero-and-info {
                 width: 100%;
 
-                .img-hero {
-                    width: rem(200px);
-                    height: rem(200px);
-                }
+                // .img-hero {
+                //     width: rem(200px);
+                //     height: rem(200px);
+                // }
 
                 .info {
                     width: 100%;
 
+                }
+            }
+        }
+    }
+    @include for-mobile-layout {
+        margin: 30px 0px 30px 0px;
+        
+        .stack-and-img {
+            flex-direction: column;
+            align-items: center;
+            
+            .hero-and-info {
+                width: 100%;
+                
+                .img-hero {
+                    width: rem(200px);
+                    height: rem(200px);
+                }
+                
+                .info {
+                    width: 100%;
+                    
+                }
+            }
+            .stack-logos{
+
+                .connections{
+                    gap: rem(20px);
                 }
             }
 
