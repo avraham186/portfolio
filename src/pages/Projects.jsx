@@ -19,7 +19,7 @@ export const Projects = ({ setPosition }) => {
     return (
         <div className='projects flex column'>
             <div className="vanila-projects">
-                <h1 className='flex justify-center' onClick={closeModal}>vanila javaScript</h1>
+                <h1 className='flex justify-center' onClick={closeModal}>javaScript</h1>
                 <div className='projects-list flex justify-center wrap' onClick={closeModal}>
                     {vanilaList.map(project => {
                         return <ProjectPreview key={project.name} project={project}

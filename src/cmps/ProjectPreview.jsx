@@ -16,7 +16,7 @@ export const ProjectPreview = ({ project, setStartDinamicProject }) => {
         <div className='projects-preview flex column align-center evenly' onClick={openModal}>
             <h2>{project.name}</h2>
             <img className='project-img' src={project.img} alt="project.img" />
-            <p>{project.description}</p>
+            <p className='flex justify-center'>{project.description}</p>
         </div>
     )
 }

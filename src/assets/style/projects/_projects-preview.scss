@@ -1,6 +1,5 @@
 .projects-preview {
     background-color: rgb(29, 61, 129);
-    height: 16rem;
     width: 10rem;
     padding: 0px 10px;
     border-radius: 10px;
@@ -11,7 +10,7 @@
     }
 
     p {
-        font-size: 0.7rem;
+        font-size: rem(18px);
     }
 
     .project-img {
