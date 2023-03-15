@@ -15,13 +15,18 @@
 
         .stack-logos {
             gap: 4rem;
-            .stock{
-                gap:0.6rem;
+
+            .stock {
+                gap: 0.6rem;
             }
-            .connections{
+
+            .connections {
                 width: 50%;
+                gap: rem(20px);
             }
-            .link-to-projects, .connections-link {
+
+            .link-to-projects,
+            .connections-link {
                 text-decoration: none;
                 color: white;
                 transition: 250ms;
@@ -42,19 +47,12 @@
 
 
     @include for-narrow-layout {
-        // margin: 30px 0px 30px 0px;
-
         .stack-and-img {
             flex-direction: column;
             align-items: center;
 
             .hero-and-info {
                 width: 100%;
-
-                // .img-hero {
-                //     width: rem(200px);
-                //     height: rem(200px);
-                // }
 
                 .info {
                     width: 100%;
@@ -63,33 +61,27 @@
             }
         }
     }
+
     @include for-mobile-layout {
         margin: 30px 0px 30px 0px;
-        
+
         .stack-and-img {
             flex-direction: column;
             align-items: center;
-            
+
             .hero-and-info {
                 width: 100%;
-                
+
                 .img-hero {
                     width: rem(200px);
                     height: rem(200px);
                 }
-                
+
                 .info {
                     width: 100%;
-                    
+
                 }
             }
-            .stack-logos{
-
-                .connections{
-                    gap: rem(20px);
-                }
-            }
-
         }
     }
 }
