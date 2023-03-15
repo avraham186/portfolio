@@ -29,7 +29,7 @@ export const Projects = ({ setPosition }) => {
                 </div>
             </div>
             <div className="react-projects">
-                <h1 className='flex justify-center' onClick={closeModal}>React</h1>
+                <h1 className='flex justify-center' onClick={closeModal}>ReactJS</h1>
                 <div className='projects-list flex justify-center wrap' onClick={closeModal}>
                     {reactList.map(project => {
                         return <ProjectPreview key={project.name} project={project}
