@@ -15,8 +15,4 @@ export const routes = [
         path: '/about',
         element:About
     },
-    // {
-    //     path: 'importentList',
-    //     element:<ImportantList/>
-    // }
 ]
