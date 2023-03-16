@@ -4,11 +4,12 @@ import logo from '../assets/logo.svg'
 import { HomeIconComp } from '../assets/images/header-svgs/HomeIconComp'
 import { ProjectsIconComp } from '../assets/images/header-svgs/ProjectsIconComp'
 import { AboutMeIconComp } from '../assets/images/header-svgs/AboutMeIconComp'
+import { Tooltip } from './ToolTip'
 export const Header = ({ position, setPosition }) => {
     const links = [
         { name: 'main', icon: <HomeIconComp />, path: '', position: 0 },
         { name: 'projects', icon: <ProjectsIconComp />, path: 'projects', position: 1 },
-        { name: 'about', icon: <AboutMeIconComp/>, path: 'about', position: 2 },
+        { name: 'about', icon: <AboutMeIconComp />, path: 'about', position: 2 },
     ]
     const moveIndicator = (idx) => {
         setPosition(idx)
@@ -27,15 +28,17 @@ export const Header = ({ position, setPosition }) => {
                             <div className="corners"></div>
                         </div>
                         {links.map((link) => {
-                            return <li key={link.position} onClick={() => moveIndicator(link.position)}>
-                                <NavLink className={(navData) => navData.isActive ?
-                                    "link active flex column align-center" :
-                                    "link flex column align-center"}
-                                    key={link.name} to={`/${link.path}`}>
-                                    <div className="icon">{link.icon}</div>
-                                    <div className="text">{link.name}</div>
-                                </NavLink>
-                            </li>
+                            return <Tooltip content={link.name} direction="bottom" key={link.position}>
+                                <li onClick={() => moveIndicator(link.position)}>
+                                    <NavLink className={(navData) => navData.isActive ?
+                                        "link active flex column align-center" :
+                                        "link flex column align-center"}
+                                        key={link.name} to={`/${link.path}`}>
+                                        <div className="icon">{link.icon}</div>
+                                        <div className="text">{link.name}</div>
+                                    </NavLink>
+                                </li>
+                            </Tooltip>
                         })}
                     </ul >
                 </div>
