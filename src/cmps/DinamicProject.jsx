@@ -20,7 +20,7 @@ export const DinamicProject = ({ link, closeModal }) => {
     }
     return (
         <div className='dinamic-project-cmp flex column align-center justify-center'>
-            <div className='close-dinamic' onClick={closeModal} title="close mdoal">❌</div>
+            <div className='close-dinamic' onClick={closeModal} title="Close">❌</div>
             <Suspense fallback={<h1>Loading...</h1>}>
                 <iframe className="iframe"
                     src={link} onLoad={iframeLoaded}

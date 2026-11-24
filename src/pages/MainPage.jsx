@@ -15,12 +15,11 @@ export const MainPage = ({ setPosition }) => {
             <div className='main-page flex justify-center column'>
                 <div className='stack-and-img flex justify-center space-between'>
                     <div className="hero-and-info flex column align-center">
-                        <img className='img-hero' src={Hero} alt='portarait' />
+                        <img className='img-hero' src={Hero} alt='Avraham Kuperwasser' />
                         <p className='info'>
-                            Fullstack developer with development experience in React framework with management
-                            capabilities, a people's person, can work independently and within teams.
-                            High personal capabilities, initiative-taking,
-                            and adaptive learner.
+                            Software Developer with 4+ years of experience building internal systems
+                            and portals with React and JavaScript. I take features from business need
+                            to delivery, and I also work on the server side with Node.js and Express.
                         </p>
                     </div>
                     <div className='stack-logos flex column align-center'>
