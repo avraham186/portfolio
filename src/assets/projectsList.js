@@ -5,25 +5,25 @@ export const vanilaList = [
     {
         "name": "ballboard",
         "img": ballBoard,
-        "description": "ball board game, you need to catch the balls",
+        "description": "Grid game: move with the arrow keys and collect the balls",
         "btn": "https://avraham186.github.io/ball-board/"
     },
     {
         "name": "memeGen",
         "img": memeGen,
-        "description": "memes generator, create design and save memes",
+        "description": "Meme editor on HTML Canvas: text, stickers, styling and download",
         "btn": "https://avraham186.github.io/memGen/"
     },
     {
         "name": "mine-sweeper",
         "img": minesweeper,
-        "description": "mine sweeper game",
+        "description": "Classic Minesweeper with 3 levels, lives and a timer",
         "btn": "https://avraham186.github.io/mineSweeperVanila/"
     },
     {
         "name": "todo app",
         "img": todoApp,
-        "description": "todo app so you wont forget any mission you need to do",
+        "description": "Todo app in MVC with filters, sorting, priorities and local storage",
         "btn": "https://avraham186.github.io/todoAppVanila/"
     }
 ]
@@ -31,13 +31,13 @@ export const reactList = [
     {
         "name": "coola-like",
         "img": coolaLike,
-        "description": "coola like community managing system",
+        "description": "Platform for a 9,000-member junior developers community: jobs, events and projects",
         "btn": "https://avraham186.github.io/coola-like/"
     },
     {
         "name": "electricity bill calculator",
         "img": eletricityCalc,
-        "description": "Electricity-calc for checking how much money needs to be paid to the electric company",
+        "description": "Calculates the electricity bill from two meter readings, including VAT",
         "btn": "https://avraham186.github.io/Electricity-calc/"
     }
 ]
